@@ -115,6 +115,76 @@
           }
         }
       }
+    },
+    "phoenix-prod-sa": {
+      "projectType": "library",
+      "root": "projects/phoenix-prod-sa",
+      "sourceRoot": "projects/phoenix-prod-sa/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/phoenix-prod-sa/tsconfig.lib.json",
+            "project": "projects/phoenix-prod-sa/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/phoenix-prod-sa/src/test.ts",
+            "tsConfig": "projects/phoenix-prod-sa/tsconfig.spec.json",
+            "karmaConfig": "projects/phoenix-prod-sa/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/phoenix-prod-sa/tsconfig.lib.json",
+              "projects/phoenix-prod-sa/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "phoenix-beta-sa": {
+      "projectType": "library",
+      "root": "projects/phoenix-beta-sa",
+      "sourceRoot": "projects/phoenix-beta-sa/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/phoenix-beta-sa/tsconfig.lib.json",
+            "project": "projects/phoenix-beta-sa/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/phoenix-beta-sa/src/test.ts",
+            "tsConfig": "projects/phoenix-beta-sa/tsconfig.spec.json",
+            "karmaConfig": "projects/phoenix-beta-sa/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/phoenix-beta-sa/tsconfig.lib.json",
+              "projects/phoenix-beta-sa/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "phoenix-core"
 }

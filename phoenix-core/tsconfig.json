@@ -17,7 +17,27 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "phoenix-beta": [
+        "dist/phoenix-beta"
+      ],
+      "phoenix-beta/*": [
+        "dist/phoenix-beta/*"
+      ],
+      "phoenix-prod-sa": [
+        "dist/phoenix-prod-sa"
+      ],
+      "phoenix-prod-sa/*": [
+        "dist/phoenix-prod-sa/*"
+      ],
+      "phoenix-beta-sa": [
+        "dist/phoenix-beta-sa"
+      ],
+      "phoenix-beta-sa/*": [
+        "dist/phoenix-beta-sa/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
