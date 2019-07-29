@@ -5,8 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import().then(mod =>
-      mod)
+    loadChildren: () => import('./prod-wrapper-security-advisor/prod-wrapper-security-advisor.module').then(mod =>
+      mod.ProdWrapperSecurityAdvisorModule)
   }
 ];
 

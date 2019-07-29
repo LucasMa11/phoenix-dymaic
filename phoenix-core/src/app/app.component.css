@@ -1,0 +1,8 @@
+.text-align{
+    text-align: center;
+}
+
+.height{
+    display: flex;
+    justify-content: flex-end;
+}

@@ -3,10 +3,6 @@
         {
             "name": "securityAdvisor",
             "version": "0.0.1"
-        },
-        {
-            "name": "dashboard",
-            "version": "0.0.1"
         }
     ],
     "prod":[

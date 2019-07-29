@@ -5,8 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import().then(mod =>
-      mod)
+    loadChildren: () => import('./beta-wrapper-security-advisor/beta-wrapper-security-advisor.module').then(mod =>
+      mod.BetaWrapperSecurityAdvisorModule)
   }
 ];
 

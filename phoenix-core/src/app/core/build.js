@@ -5,8 +5,9 @@ var config = JSON.parse(configFile);
 console.log(config)
 config.beta.forEach(element => {
     var name = element.name;
-    exec(`ng g module wrapper-${name}`);
-    // var wrapper = fs.readFileSync(`./wrapper-${name}`).toString();
-    // console.log(wrapper);
+    exec(`ng g module beta-wrapper-${name}`);
 });
-
+config.prod.forEach(element => {
+    var name = element.name;
+    exec(`ng g module prod-wrapper-${name}`);
+});
