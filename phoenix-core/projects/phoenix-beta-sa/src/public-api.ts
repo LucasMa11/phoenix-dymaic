@@ -3,5 +3,5 @@
  */
 
 export * from './lib/phoenix-beta-sa.service';
-export * from './lib/phoenix-beta-sa.component';
+export * from './lib/phoenix-beta-sa/phoenix-beta-sa.component';
 export * from './lib/phoenix-beta-sa.module';
